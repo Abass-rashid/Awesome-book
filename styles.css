@@ -103,6 +103,10 @@ footer {
   bottom: 0;
   width: calc(100% - 40px);
 }
+.brand {
+  text-align: center;
+  margin-left: 34rem;
+}
 
 .date {
   text-align: right;
