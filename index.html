@@ -2,24 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome book</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plain book</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <h1>Awesome Books</h1>
-  <ul id="books">
- </ul>
-  <br><br>
-  <input type="text" name="title" id="title" placeholder="Title">
-  <br><br>
-  <input type="text" name='author' id="author" placeholder="Author">
-  <br><br>
-  <input type="button" id="add" value="add">
-  <script src="script.js"></script>
+  <header>
+    <nav>
+      <div class="brand">Awesome Books</div>
+      <div class="nav-links">
+        <button id="list" class="nav-btn" type="button">List</button>
+        <button id="add-new" class="nav-btn" type="button">Add new</button>
+        <button id="contact" class="nav-btn" type="button">Contact</button>
+      </div>
+    </nav>
+    <div class="date"></div>
+  </header>
+  <div class="awesome-book">
+    <section class="book-list" id="book-list">
+      <h2>All awesome Books</h2>
+      <ul id="books" class="books"></ul>
+    </section>
+
+    <form class="form" id="form">
+      <h2>Add a new book</h2>
+      <input type="text" class="input" name="title" id="title" placeholder="Title" />
+      <br />
+      <br />
+      <input type="text" class="input" name="author" id="author" placeholder="Author" />
+      <br />
+      <br />
+      <input type="button" id="add" value="add" />
+    </form>
+
+    <section class="contact-info" id="contact-info">
+      <h2>Contact information</h2>
+      <p>
+        Do you have any questions or you want to say just "Hello!"? You can
+        reach out to us
+      </p>
+      <ul>
+        <li>Our email: mail@email.com</li>
+        <li>Our phone number: +2546484238424 or +25478645280</li>
+        <li>Our address: Streetname: 22, 154521 Nairobi, kenya</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <div class="brand">Copyright by Abass Rashid</div>
+  </footer>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
